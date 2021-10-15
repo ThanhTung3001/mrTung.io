@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+     <div class="container">
+         <div class="header ">
+             <div class="header menu">
+                <i class="bi bi-list"></i>
+             </div>
+             <div class="header title">
+                  Now Playing
+             </div>
+             <div class="header search">
+                 <input type="text" name="" id="search_song">
+               <button id="btn__search"> <i class="bi bi-search"></i></button>
+             </div>
+         </div>
+         <div class="main">
+            <div class="img__bottom">
+                <img src="/img/td1.png" alt="">
+                <div class="play__music">
+                    <div class="img__play">
+                        <img src="/img/td1.png" alt="">
+                        <div class="name__Siger" style="height: 50px;">
+                            
+                        </div>
+                       <span style="margin-top: 15px; display: flex;flex-direction: row;" >
+                        <h4 id="currentTime">
+
+                        </h4>/
+                        <h4 id="duration">
+
+                        </h4>
+                    
+                       </span>
+                    </div>
+                    <div class="ranger_music">
+                       <input type="range" name="" id="input__range" min="1" max="100">
+                       
+                      <div class="hander__music">
+                         
+                       <div class="block_play">
+                           <i class="bi bi-caret-left"></i>
+                       </div>
+                       <div class="block_play">
+                           <i class="bi bi-pause"></i>
+                       </div>
+                       <div class="block_play">
+                           <i class="bi bi-caret-right"></i>
+                       </div>
+                    
+                       <audio id="audio" ontimeupdate="updateTrackTime(this)" src="http://vnno-vn-6-tf-mp3-s1-zmp3.zadn.vn/366fa8ff83b86ae633a9/8235770814660146380?authen=exp=1634402371~acl=/366fa8ff83b86ae633a9/*~hmac=458a4bc866bf3c1fc2d0bee60cd5772d"></audio>
+                         
+                      </div>
+                   </div>
+                </div>
+            </div>
+             
+             <div class="list__music">
+                 <ul class="list">
+                   
+                   
+                 </ul>
+             </div>
+         </div>
+     </div>
+    <script src="main.js"></script>
+</body>
+</html>

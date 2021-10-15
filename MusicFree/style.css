@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color:rgba(46,64,88,255);
+    color: #d2d4db    ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.main{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+}
+.img__bottom{
+    margin-right: 50px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.img__bottom img{
+    width: 600px;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.play__music{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img__play{
+   width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.img__play img{
+    width: 80%;
+    height: 80%;
+    opacity: 1;
+    border:dimgray 8px solid;
+     border-radius: 100%;
+    animation: spin_around 5s linear 0s infinite;
+    -webkit-animation: spin_around 5s linear 0s infinite;
+    -moz-animation: spin_around 5s linear 0s infinite;
+    -o-animation: spin_around 5s linear 0s infinite; 
+}
+@-webkit-keyframes spin_around{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+    }
+}.play__music{
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+    align-items: center;
+}
+.hander__music,
+.name__Siger,
+.ranger_music{
+    flex-direction: column;
+    height: 40px;
+    display: flex;
+    align-items: center;
+   justify-content: start;
+    width: 120%;
+    margin-top:20px ;
+}
+.ranger_music input{
+    width: 80%;
+}
+.block_play{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(46,64,88,255) ;
+    border-radius: 100%;
+ opacity: 0.5;
+}
+.block_play:hover{
+    opacity: 1;
+}
+.bi-play,
+.bi-caret-right,
+.bi-caret-left,
+.block_play .bi-pause{
+    font-size: 60px;
+}
+.hander__music{
+    margin-top: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bi-caret-right,
+.bi-caret-left{
+    font-size: 40px;
+}
+.hander__music{
+    width: 80%;
+}
+.list__music{
+    background-color: cornsilk;
+   width: 500px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.list__music ul{
+    margin-top: 20px;
+    width: 90%;
+    
+}
+.list__music ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background-color:dimgray ;
+    height: 80px;
+    list-style-type: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.list__music ul li img{
+  height: 100%;
+}
+.infor__song{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.btnPlay{
+    height: 100%;
+}
+.btnPlay button .bi-play{
+    font-size: 30px;
+    color: black;
+}
+.btnPlay button{
+    background-color:white ;
+    border-radius: 20px;
+    border: none;
+}
+@media only screen and (max-width: 900px) {
+ .main{
+     flex-direction: column;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .list__music{
+     width: 100%;
+ }
+ .list__music ul li{
+     height: 90px;
+     font-size: 13px;
+ }
+
+  .header .title{
+      display: block;
+  }
+  .img__bottom{
+      width: 100%;
+      margin: 0;
+  }
+}
+  .img__bottom img{
+      width: 100%;
+  }
+  .img__play img{
+    width: 80%;
+    height: 80%;
+}
+
+  .header.search button{
+      margin-left: 30px;
+      border: none;
+      background-color:rgba(46,64,88,255);
+
+  }
+  .header.search input{
+      display: none;
+      height: 30px;
+     font-size: 15px;
+  }
+  .bi-list,
+  .bi-search{
+      font-size: 25px;
+  }
+  .list__music ul{
+      width: 80%;
+  }
+ 
